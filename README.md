@@ -19,3 +19,6 @@ Screens:
 
 ![result](https://user-images.githubusercontent.com/77387138/140647666-b210d6ef-94c1-498e-b76b-bd924611cd0d.JPG)
 
+- No items found error
+
+![noItemsFound](https://user-images.githubusercontent.com/77387138/140658948-f2aa0397-ee80-4d95-b232-60ac4eca995c.png)
