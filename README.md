@@ -1,6 +1,10 @@
 Java Swing Item Scanner used to webscrape for the items of your choice, after completing the search you will be able to save a copy of the searched items.
 The sites used for scraping are the following: altex.ro / cel.ro / emag.ro / evomag.ro / forit.ro
 
+Video:
+
+https://user-images.githubusercontent.com/77387138/146690254-d029f2ae-20e7-4a58-bc74-0dac87080df6.mp4
+
 Screens:
 
 - GUI
