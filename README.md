@@ -3,7 +3,7 @@ The sites used for scraping are the following: altex.ro / cel.ro / emag.ro / evo
 
 Video:
 
-https://user-images.githubusercontent.com/77387138/148651652-575193b8-1fd4-43e6-81ac-707d9f10d1f5.mp4
+https://user-images.githubusercontent.com/77387138/148657110-6e5f37a5-94ba-4118-8952-fc1497ca47f1.mp4
 
 Screens:
 
