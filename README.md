@@ -1,8 +1,17 @@
 Description
 -
 
-Java Swing Item Scanner used to webscrape for the items of your choice, after completing the search you will be able to save a copy of the searched items.
+With Item scrapper you will be able to search for items on 4 different websites, after the search is complete you will be able to save a copy of the searched items in your pc.
 The sites used for scraping are the following: altex.ro / cel.ro / emag.ro / evomag.ro / forit.ro
+
+Used tools
+-
+
+- Eclipse
+- Java
+- Selenium WebDriver
+- Xpath locators
+- JavascriptExecutor
 
 Video
 -
