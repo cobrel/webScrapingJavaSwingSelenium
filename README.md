@@ -4,14 +4,11 @@ Description
 With Item scrapper you will be able to search for items on 4 different websites, after the search is complete you will be able to save a copy of the searched items in your pc.
 The sites used for scraping are the following: altex.ro / cel.ro / emag.ro / evomag.ro / forit.ro
 
-Used tools
+Latest Release / Download
 -
 
-- Eclipse
-- Java
-- Selenium WebDriver
-- Xpath locators
-- JavascriptExecutor
+https://img.shields.io/github/v/release/cobrel/webScrapingJavaSwingSelenium
+
 
 Video
 -
