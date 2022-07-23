@@ -7,7 +7,7 @@ The sites used for scraping are the following: altex.ro / cel.ro / emag.ro / evo
 Latest Release / Download
 -
 
-https://img.shields.io/github/v/release/cobrel/webScrapingJavaSwingSelenium
+![release](https://img.shields.io/github/v/release/cobrel/webScrapingJavaSwingSelenium?logo=GitHub&style=for-the-badge)
 
 
 Video
