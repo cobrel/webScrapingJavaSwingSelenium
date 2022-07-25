@@ -9,6 +9,7 @@ Latest Release / Download
 
 [![release](https://img.shields.io/github/v/release/cobrel/webScrapingJavaSwingSelenium?logo=GitHub&style=for-the-badge)](https://github.com/cobrel/webScrapingJavaSwingSelenium/releases/tag/v1.0)
 
+In order to run this app, you must have java 1.8 and firefox installed
 
 Video
 -
@@ -20,15 +21,12 @@ Screenshots
 
 - GUI
 
-![GUI](https://user-images.githubusercontent.com/77387138/140647588-d38aa3ba-1ce4-42d8-b414-59823e0d21c0.JPG)
+![save](https://user-images.githubusercontent.com/77387138/140647618-c3f0f4af-d1e4-4c4f-910b-32e99d51cfc9.JPG)
 
 - File dropdown
 
 ![IMG_20211107_151709](https://user-images.githubusercontent.com/77387138/140647608-4ba89ecd-e375-45e6-a888-77c082afd9db.jpg)
 
-- Save
-
-![save](https://user-images.githubusercontent.com/77387138/140647618-c3f0f4af-d1e4-4c4f-910b-32e99d51cfc9.JPG)
 
 - File.csv Result
 
