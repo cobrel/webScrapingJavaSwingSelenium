@@ -1,8 +1,7 @@
 Description
 -
 
-With Item scrapper you will be able to search for items on 4 different websites, after the search is complete you will be able to save a copy of the searched items in your pc.
-The sites used for scraping are the following: altex.ro / cel.ro / emag.ro / evomag.ro / forit.ro
+Using the Item Scraper tool, you can conduct searches for items on four distinct websites. Once the search is finished, you have the option to save a copy of the searched items on your pc. The websites that can be scraped are altex.ro, cel.ro, emag.ro, evomag.ro, and forit.ro.
 
 Latest Release / Download
 -
