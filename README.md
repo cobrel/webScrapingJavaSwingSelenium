@@ -8,7 +8,8 @@ Latest Release / Download
 
 [![release](https://img.shields.io/github/v/release/cobrel/webScrapingJavaSwingSelenium?logo=GitHub&style=for-the-badge)](https://github.com/cobrel/webScrapingJavaSwingSelenium/releases/tag/v1.1.0)
 
-In order to run this app, you must have java 1.8 and firefox installed
+- In order to run this app, you must have java 1.8 and firefox installed
+- Open cmd and type java -version to check your java version or if you have it installed
 
 Video
 -
