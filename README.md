@@ -1,7 +1,7 @@
 Description
 -
 
-The Item Scraper tool was created using Java 1.8, Selenium, and REST APIs, and it enables you to search for items on five distinct websites. Once the search is finished, you have the option to save a copy of the searched items on your pc. The websites that can be scraped are altex.ro, cel.ro, emag.ro, evomag.ro, and forit.ro.
+The Item Scraper tool was created using Java, Selenium, and REST APIs, and it enables you to search for items on five distinct websites. Once the search is finished, you have the option to save a copy of the searched items on your pc. The websites that can be scraped are altex.ro, cel.ro, emag.ro, evomag.ro, and forit.ro.
 
 Latest Release / Download
 -
