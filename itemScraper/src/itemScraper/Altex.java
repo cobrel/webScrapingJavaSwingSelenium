@@ -8,19 +8,18 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Altex extends Utils {
 
 	public void altexResults(String cautare, JTable jtableG) {
 		Utils.createInstance();
 		driver.get("https://altex.ro/");
-		WebDriverWait wait = new WebDriverWait(driver, 15);
+
 		if (driver.findElements(By.xpath("//*[text()='Inapoi in site']")).size() != 0) {
 			driver.findElement(By.xpath("//*[text()='Inapoi in site']")).click();
 		}
 		// accept cookie
-		WebElement cookie = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@id='notice-cookie-block']//button")));
+		WebElement cookie = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[contains(text(),'Accept')]")));
 		cookie.click();
 		// search for item
 		WebElement Cauta = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@placeholder='Cauta produsul dorit']")));
@@ -30,7 +29,6 @@ public class Altex extends Utils {
 		int rezultateCautare = driver.findElements(By.xpath("//li[contains(text(),'Rezultate cautare')]")).size();
 		//wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//li[contains(text(),'Rezultate cautare')]")));
 		int elementePrimaPag = driver.findElements(By.xpath("//ul//*[text()='lei']/parent::div")).size();
-		System.out.println(elementePrimaPag);
 		//loop to get the elements
 		if (elementePrimaPag > 0 && rezultateCautare > 0) {
 			while (true) {

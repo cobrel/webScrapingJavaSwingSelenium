@@ -1,25 +1,26 @@
 package itemScraper;
 
 import java.util.List;
-
 import javax.swing.JOptionPane;
 import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Evomag extends Utils{
 	public void evomagResults(String cautare, JTable jtableG) {
 		iterate();
 		driver.navigate().to("https://www.evomag.ro/");
-		WebDriverWait wait = new WebDriverWait(driver, 15);
 		// accept cookie
 		WebElement cookie = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@id='pushinstruments_popup']//a[@class='pushinstruments_button_deny']")));
 		cookie.click();
+		WebElement cookieBtn = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[contains(text(),'Accepta toate')]")));
+		cookieBtn.click();
+//		WebElement reclama = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("div#popup-banner a.close")));
+//		reclama.click();
+		
 		//search
 		WebElement Cautare = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@placeholder='ce cauti astazi?']")));
 		Cautare.sendKeys(cautare, Keys.ENTER);
@@ -30,12 +31,17 @@ public class Evomag extends Utils{
 		if(elementePrimaPag > 0) {
 			while (true) {
 				wait.until(ExpectedConditions.refreshed(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//span[@class='real_price']"))));
-				int count = driver.findElements(By.xpath("//span[@class='real_price']")).size();
 				wait.until(ExpectedConditions.refreshed(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//div[@class='npi_name']//a"))));
-				for (int j = 0; j < count; j++) {			
-					String nume = driver.findElements(By.xpath("//div[@class='npi_name']//a")).get(j).getText().replaceAll(",", "");
-					String getHref = driver.findElements(By.xpath("//div[@class='npi_name']//a")).get(j).getAttribute("href");
-					String pret = driver.findElements(By.xpath("//span[@class='real_price']")).get(j).getText();
+				List<WebElement> names = wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//div[@class='npi_name']//a")));
+				List<WebElement> prices = wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//span[@class='real_price']")));
+				int count = Math.min(prices.size(), names.size());
+
+				
+				for (int j = 0; j < count; j++) {	
+
+					String nume = names.get(j).getText().replaceAll(",", "");
+					String getHref = names.get(j).getAttribute("href");
+					String pret = prices.get(j).getText();
 					String pretTaiat = pret.substring(0, pret.length() - 4).replaceAll(",", ".");
 					DefaultTableModel model = (DefaultTableModel)jtableG.getModel();
 					model.addRow(new Object[] {nume,pretTaiat,getHref});

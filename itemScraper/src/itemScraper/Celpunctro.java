@@ -1,22 +1,19 @@
 package itemScraper;
 
 import java.util.List;
-
 import javax.swing.JOptionPane;
 import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Celpunctro extends Utils{
 	public void celpunctroResults(String cautare, JTable jtableG) {
 		iterate();
 		driver.navigate().to("https://www.cel.ro/");
-		WebDriverWait wait = new WebDriverWait(driver, 15);
+
 		//accept cookie
 		WebElement cookie = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@class='later']")));
 		cookie.click();
